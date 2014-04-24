@@ -1,0 +1,93 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+  <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/textoNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <EditText
+            android:id="@+id/editNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textoNombre"
+            android:hint="algo que identifique el lugar" >
+           
+             </EditText>
+        <TextView
+            android:id="@+id/textoTipo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editNombre"
+            android:text="Tipo:"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+         <Spinner
+                  android:id="@+id/editTipo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/textoTipo"
+            android:layout_toRightOf="@id/textoTipo" />
+                   <TextView
+            android:id="@+id/textoDireccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textoTipo"
+            android:text="Dirección:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+         <EditText
+            android:id="@+id/editDireccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textoDireccion"
+            android:hint="dirección del lugar"
+            android:inputType="textPostalAddress" />
+        <TextView
+            android:id="@+id/textoTelefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editDireccion"
+            android:text="Telefono:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <EditText
+            android:id="@+id/editTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/textoTelefono"
+            android:layout_alignTop="@id/textoTelefono"
+            android:hint="teléfono para contactar"
+            android:inputType="phone" />
+        <TextView
+                 android:id="@+id/textoUrl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTelefono"
+            android:text="Url:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <EditText
+            android:id="@+id/editUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textoUrl"
+            android:hint="página web"
+            android:inputType="textUri" />
+        <TextView
+            android:id="@+id/textoComentario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editUrl"
+            android:text="Comentario:"
+              android:textAppearance="?android:attr/textAppearanceMedium" />
+        <EditText
+            android:id="@+id/editComentario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textoComentario"
+            android:hint="introduce tus notas"
+            android:inputType="textMultiLine" />
+   </RelativeLayout>
+</ScrollView>

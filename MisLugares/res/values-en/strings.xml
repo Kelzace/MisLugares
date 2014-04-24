@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">My Places</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="textoTitulo">My Places</string>
+    <string name="botonMostrar">Show Places</string>
+    <string name="botonPreferencias">Preferences</string>
+    <string name="botonAcercaDe">About</string>
+    <string name="botonSalir">Exit</string>
+
+</resources>
